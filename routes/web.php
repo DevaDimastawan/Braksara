@@ -19,6 +19,12 @@ Route::get('/post', function () {
     ]);
         
 });
+Route::get('/', function () {
+    return view('beranda', [
+        "title" => "Beranda"
+    ]);
+        
+});
 Route::get('/post2', function () {
     return view('post2', [
         "title" => "Post 2"
